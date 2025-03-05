@@ -18,8 +18,17 @@ main {
     width: 300px;
     height: 300px;
     object-fit: cover;
-
+    filter: grayscale(65%);
+    transition: 300ms;
 }
+
+
+/* cuando pasa mouse aumenta color y agranda imagen */
+.imgCircular:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
 
 /* ===============MEDIAS QUERIES=========== */
 /* medianos */
