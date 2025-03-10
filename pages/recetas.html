@@ -42,8 +42,8 @@
         <!-- formulario de seleccion de recetas -->
         <form class="row g-3">
             <div class="col-md-4 mb-3">
-                <label for="receta" class="form-label">Hoy quiero preparar:</label>
-                <select class="form-select" aria-label="Default select example">
+                <label for="receta" class="form-label fw-bold fs-5">Hoy quiero preparar:</label>
+                <select class="form-select" id="receta" aria-label="select receta">
                     <option selected>Todas las recetas</option>
                     <option value="1">Alfajores</option>
                     <option value="2">Budines</option>
@@ -56,8 +56,8 @@
                 </select>
             </div>
             <div class="col-md-4 mb-3">
-                <label for="tipoAzucar" class="form-label">Prefiero que sea con:</label>
-                <select class="form-select" aria-label="Default select example">
+                <label for="tipoAzucar" class="form-label fw-bold fs-5">Prefiero que sea con:</label>
+                <select class="form-select" id="tipoAzucar" aria-label="Select tipo de azucar">
                     <option selected>Todos los productos</option>
                     <option value="1">Clásica</option>
                     <option value="2">Light</option>
@@ -66,8 +66,8 @@
                 </select>
             </div>
     
-            <div class="col-md-4 mb-3">
-                <button class="btn btn-primary" type="submit">Buscar</button>
+            <div class="col-md-4 mb-3 align-content-center">
+                <button class="btn btn-primary rounded-5 px-5 fw-bold fs-5" type="submit">Buscar</button>
             </div>
         </form>
         
