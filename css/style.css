@@ -32,10 +32,70 @@ main {
 
 
 /* pagina RECETAS */
+
 .imgBannerRecetas{
     width: 100%;
-    aspect-ratio: 16/4;
+    /* aspect-ratio: 16/4; */
+    aspect-ratio: 16/9;
     object-fit: cover;
 }
 
 
+/* position para titulo banner */
+.bannerRecetas {
+    position: relative;
+    text-align: center;
+}
+
+.bannerTitulo {
+    position: absolute;
+    top: 20%; /* Centrado vertical */
+    left: 3%; /* Centrado horizontal */
+}
+
+/* input banner */
+.bannerInput {
+    position: absolute;
+    top: 60%; /* Centrado vertical */
+    left: 20%; /* Centrado horizontal */   
+}
+
+
+/* ========================== */
+/* MEDIAS QUERIES */
+
+/* medianos */
+@media (min-width: 768px) and (max-width: 991px) {
+    .imgBannerRecetas{
+        aspect-ratio: 16/4;
+    }
+    /* para centrar titulo banner */
+    .bannerTitulo {
+        top: 30%; /* Centrado vertical */
+        left: 2%; /* Centrado horizontal */
+    }
+
+    /* input banner */
+    .bannerInput {
+        top: 75%; /* Centrado vertical */
+        left: 40%; /* Centrado horizontal */   
+    }
+}
+
+/* grandes */
+@media (min-width: 992px) {
+    .imgBannerRecetas{
+        aspect-ratio: 16/4;
+    }
+    
+    /* para centrar titulo banner */
+    .bannerTitulo {
+        top: 30%; /* Centrado vertical */
+        left: 10%; /* Centrado horizontal */
+    }
+
+    /* input banner */
+    .bannerInput {
+        left: 40%; /* Centrado horizontal */   
+    }
+}

@@ -40,16 +40,24 @@
     </header>
     <main>
         <!-- banner inicial -->
-        <section>
-            <img src="https://images.pexels.com/photos/7966481/pexels-photo-7966481.jpeg?auto=compress&cs=tinysrgb&w=300" class="img-fluid imgBannerRecetas"
-                alt="mesa con harina, huevos y manos que preparan masa">
+        <section class="bannerRecetas position-relative">
+            <img src="https://images.pexels.com/photos/7966481/pexels-photo-7966481.jpeg?auto=compress&cs=tinysrgb&w=300"
+                class="img-fluid imgBannerRecetas" alt="mesa con harina, huevos y manos que preparan masa">
+            <h2 class="display-6 fw-semibold text-center bannerTitulo text-primary">¡INSPIRATE COCINANDO CON AZÚCAR
+                LEDESMA!</h2>
+
+            <!-- Contenedor del Input -->
+            <div class="bannerInput">
+                <input type="text" class="form-control border border-primary border-3" placeholder="Buscar recetas...">
+                <!-- <button class="btn btn-primary">Buscar</button> -->
+            </div>
         </section>
 
         <section class="container my-3">
             <!-- formulario de seleccion de recetas -->
             <form class="row g-3">
                 <div class="col-md-4 mb-3">
-                    <label for="receta" class="form-label fw-bold fs-5">Hoy quiero preparar:</label>
+                    <label for="receta" class="form-label fw-bold fs-5 text-primary">Hoy quiero preparar:</label>
                     <select class="form-select" id="receta" aria-label="select receta">
                         <option selected>Todas las recetas</option>
                         <option value="1">Alfajores</option>
@@ -63,7 +71,7 @@
                     </select>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <label for="tipoAzucar" class="form-label fw-bold fs-5">Prefiero que sea con:</label>
+                    <label for="tipoAzucar" class="form-label fw-bold fs-5 text-primary">Prefiero que sea con:</label>
                     <select class="form-select" id="tipoAzucar" aria-label="Select tipo de azucar">
                         <option selected>Todos los productos</option>
                         <option value="1">Clásica</option>
@@ -215,7 +223,7 @@
                     </div>
                 </article>
             </section>
-        </section>    
+        </section>
     </main>
     <footer class="bg-dark text-light text-center py-5">
         <p>&copy; Todos los derechos reservados</p>
