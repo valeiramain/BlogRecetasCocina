@@ -39,7 +39,38 @@
         </nav>
     </header>
     <main class="container my-3">
-        
+
+        <article class="row">
+            <div class="col-12 col-md-6">
+                <img src="https://images.pexels.com/photos/6996098/pexels-photo-6996098.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="img-fluid imgContactos" alt="frascos con azucar">
+            </div>
+            <form class="col-12 col-md-6">
+                <div class="mb-3 mt-3">
+                    <label for="apyNomContactos" class="form-label">Nombre y Apellido *</label>
+                    <input type="text" class="form-control" id="apyNomContactos" minlength="5" maxlength="30"
+                        placeholder="Ej: Juan Perez" required>
+                    <div class="form-text">Debe tener entre 5 y 30 caracteres.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email *</label>
+                    <input type="email" class="form-control" id="email" placeholder="juanperez@gmail.com" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="consultaContactos" class="form-label">Consulta *</label>
+                    <textarea class="form-control" id="consultaContactos" rows="3"
+                        placeholder="Agregue aquí su consulta" minlength="10" maxlength="200" required></textarea>
+                    <div class="form-text">Debe tener entre 10 y 200 caracteres.</div>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary mx-auto">Enviar</button>
+                </div>
+            </form>
+        </article>
+
+
     </main>
     <footer class="bg-dark text-light text-center py-5">
         <p>&copy; Todos los derechos reservados</p>
@@ -47,4 +78,5 @@
 
     <script src="../js/bootstrap.min.js"></script>
 </body>
+
 </html>

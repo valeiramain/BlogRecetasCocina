@@ -65,6 +65,12 @@ main {
 }
 
 
+/* PAGINA CONTACTOS */
+.imgContactos{
+    height: 324px;
+    object-fit: cover;
+}
+
 /* ========================== */
 /* MEDIAS QUERIES */
 
@@ -89,6 +95,10 @@ main {
         left: 37%;
         /* Centrado horizontal */
     }
+
+    .imgContactos{
+        height: 407px;
+    }
 }
 
 /* grandes */
@@ -109,5 +119,9 @@ main {
     .bannerInput {
         left: 40%;
         /* Centrado horizontal */
+    }
+
+    .imgContactos{
+        height: 407px;
     }
 }
