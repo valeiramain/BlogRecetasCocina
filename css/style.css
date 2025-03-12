@@ -36,8 +36,7 @@ main {
 /* position para imagen, titulo e input banner */
 .imgBannerRecetas {
     width: 100%;
-    /* aspect-ratio: 16/4; */
-    aspect-ratio: 16/9;
+    height: 150px;
     object-fit: cover;
     position: relative;
     text-align: center;
@@ -45,7 +44,7 @@ main {
 
 .bannerTitulo {
     position: absolute;
-    top: 20%;
+    top: 10%;
     /* Centrado vertical */
     left: 3%;
     /* Centrado horizontal */
@@ -53,7 +52,7 @@ main {
 
 .bannerInput {
     position: absolute;
-    top: 60%;
+    top: 50%;
     /* Centrado vertical */
     left: 20%;
     /* Centrado horizontal */
@@ -77,12 +76,12 @@ main {
 /* medianos */
 @media (min-width: 768px) and (max-width: 991px) {
     .imgBannerRecetas {
-        aspect-ratio: 16/4;
+        height: 200px;
     }
 
     /* para centrar titulo banner */
     .bannerTitulo {
-        top: 30%;
+        top: 25%;
         /* Centrado vertical */
         left: 2%;
         /* Centrado horizontal */
@@ -90,7 +89,7 @@ main {
 
     /* input banner */
     .bannerInput {
-        top: 75%;
+        top: 70%;
         /* Centrado vertical */
         left: 37%;
         /* Centrado horizontal */
@@ -104,7 +103,7 @@ main {
 /* grandes */
 @media (min-width: 992px) {
     .imgBannerRecetas {
-        aspect-ratio: 16/4;
+        height: 200px;
     }
 
     /* para centrar titulo banner */
@@ -117,6 +116,7 @@ main {
 
     /* input banner */
     .bannerInput {
+        top: 60%;
         left: 40%;
         /* Centrado horizontal */
     }
